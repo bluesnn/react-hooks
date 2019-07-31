@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import Nav from './components/navigation'
-import Demo from './views/demo/index';
+import State from './views/state/index';
 import Effect from './views/effect/index';
 import * as serviceWorker from './serviceWorker';
 
 const App = (
   <Router>
     <Nav />
-    <Route exact path="/" component={Demo} />
+    <Route exact path="/" component={State} />
     <Route path="/effect" component={Effect} />
   </Router>
 );
